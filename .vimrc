@@ -38,8 +38,10 @@
 
     Plug 'octol/vim-cpp-enhanced-highlight'             "C++ highlighting
     Plug 'scrooloose/nerdtree'                          "NERDTree
-	Plug 'neoclide/coc.nvim', {'branch': 'release'}		"Intellisense engine for vim8
+    Plug 'zxqfl/tabnine-vim'                            "Tabnine autocomplete
     Plug 'xuhdev/singlecompile'                         "To help compile and run
+    Plug 'chiel92/vim-autoformat'                       "Autoformating for Python & C++
+    Plug 'tmsvg/pear-tree'                              "automatically pairs parentheses, quotes, etc
 
 	call plug#end()
 
