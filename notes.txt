@@ -1,0 +1,6 @@
+gnome-terminal -- bash -c "exec fish; exec bash"  FISH shortcuts
+
+sudo apt install bcmwl-kernel-source
+
+
+
