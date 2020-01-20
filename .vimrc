@@ -20,12 +20,16 @@
 
     "Change leader key
     let mapleader = "\<Space>"
+
+    "Netrw
+    let g:netrw_liststyle=3 "Show the tree listing"
+    map <leader>e :Texplore<CR>
+    let ghregex='\(^\|\s\s\)\zs\.\S\+'
+    let g:netrw_list_hide=ghregex
+
     "Spell check on and off
     map <leader>s :setlocal spell! spelllang=en_us<CR>
-    "Nerdtree
-    map <leader>n :NERDTree<CR>
-    "Reload Current file
-    map <leader>r :source %<CR>
+
     "Build and Run C++
     map <leader>c :SCCompile<CR>
     map <leader>r :SCCompileRun<CR>
@@ -37,7 +41,6 @@
 	call plug#begin('~/.vim/plugged')
 
     Plug 'octol/vim-cpp-enhanced-highlight'             "C++ highlighting
-    Plug 'scrooloose/nerdtree'                          "NERDTree
     Plug 'zxqfl/tabnine-vim'                            "Tabnine autocomplete
     Plug 'xuhdev/singlecompile'                         "To help compile and run
     Plug 'chiel92/vim-autoformat'                       "Autoformating for Python & C++
