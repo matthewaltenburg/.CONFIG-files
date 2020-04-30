@@ -2,5 +2,10 @@ gnome-terminal -- bash -c "exec fish; exec bash"  FISH shortcuts
 
 sudo apt install bcmwl-kernel-source
 
+####add tabnine to jupyter notebook
+pip3 install jupyter-tabnine
+jupyter nbextension install --py jupyter_tabnine
+jupyter nbextension enable --py jupyter_tabnine
+jupyter serverextension enable --py jupyter_tabnine
 
-
+add jupyter min-conda

@@ -17,6 +17,8 @@
 	set expandtab		        	"Change all tabs to spaces
 
 " Mapping
+    "Clear Highlighting"
+    nmap <esc><esc> :noh<return>
 
     "Change leader key
     let mapleader = "\<Space>"
@@ -40,6 +42,7 @@
 "Plugins
 	call plug#begin('~/.vim/plugged')
 
+    Plug 'flazz/vim-colorschemes'                       "Add more color schemes
     Plug 'octol/vim-cpp-enhanced-highlight'             "C++ highlighting
     Plug 'zxqfl/tabnine-vim'                            "Tabnine autocomplete
     Plug 'xuhdev/singlecompile'                         "To help compile and run
